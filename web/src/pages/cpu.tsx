@@ -44,7 +44,7 @@ export const CPU = () => {
   }, [actions, dispatch]);
 
   return (
-    <div className="CpuPage grid">
+    <div className="Page CpuPage grid">
       <MemoryComponent
         name="ROM"
         memory={state.sim.ROM}

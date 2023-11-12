@@ -439,7 +439,7 @@ export const Chip = () => {
   );
 
   return (
-    <div className="ChipPage grid">
+    <div className="Page ChipPage grid">
       {hdlPanel}
       {pinsPanel}
       {testPanel}
