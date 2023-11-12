@@ -16,6 +16,7 @@ import {
   TestClearEchoInstruction,
   TestCompoundInstruction,
   TestEchoInstruction,
+  TestLoadInstruction,
   TestLoadROMInstruction,
   TestOutputInstruction,
   TestOutputListInstruction,
@@ -24,6 +25,8 @@ import {
   TestWhileInstruction,
 } from "./instruction.js";
 import { Test } from "./tst.js";
+import { TestVMStepInstruction } from "./vmtst.js";
+import { TestTickTockInstruction } from "./cputst.js";
 
 function isTstLineStatment(line: TstStatement): line is TstLineStatement {
   return (line as TstLineStatement).ops !== undefined;
@@ -50,8 +53,12 @@ function makeInstruction(inst: TstOperation) {
       return new TestTickInstruction();
     case "tock":
       return new TestTockInstruction();
+    case "ticktock":
+      return new TestTickTockInstruction();
     case "eval":
       return new TestEvalInstruction();
+    case "vmstep":
+      return new TestVMStepInstruction();
     case "output":
       return new TestOutputInstruction();
     case "set":
