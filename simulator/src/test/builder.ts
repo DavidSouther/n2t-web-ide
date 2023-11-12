@@ -16,7 +16,6 @@ import {
   TestClearEchoInstruction,
   TestCompoundInstruction,
   TestEchoInstruction,
-  TestLoadInstruction,
   TestLoadROMInstruction,
   TestOutputInstruction,
   TestOutputListInstruction,
