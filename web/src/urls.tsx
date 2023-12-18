@@ -39,7 +39,12 @@ const URLs = {
     icon: "list_alt",
     target: <ASM />,
   },
-  // { href: "/vm", link: `VM`, icon: "computer", target: <VM /> },
+  vm: {
+    href: "/vm",
+    tooltip: TOOLS["VM"],
+    icon: "computer",
+    target: <VM />,
+  },
   bitmap: {
     href: "/bitmap",
     tooltip: TOOLS["bitmap"],
@@ -58,7 +63,6 @@ const URLs = {
     icon: "menu_book",
     target: <Guide />,
   },
-  vm: { href: "/vm", link: `VM`, icon: "computer", target: <VM /> },
   about: { href: "/about", tooltip: t`About`, icon: "info", target: <About /> },
 };
 
